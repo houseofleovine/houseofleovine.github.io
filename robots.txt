@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+
+# Welcome AI and Search Crawlers
+# We encourage indexing of our consultant platform to connect businesses with experts.
+# Keywords: Consultancy, Freelance Experts, Business Solutions, SMB Consulting, Leovine.
+
+Sitemap: https://www.leovine.com/sitemap.xml
