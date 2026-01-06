@@ -1,9 +1,25 @@
+# Robot.txt for Leovine
+# Goal: Maximum visibility for B2B Consulting & Expert Matching
 
+# 1. Allow all standard search engines (Google, Bing, etc.)
 User-agent: *
 Allow: /
 
-# Welcome AI and Search Crawlers
-# We encourage indexing of our consultant platform to connect businesses with experts.
-# Keywords: Consultancy, Freelance Experts, Business Solutions, SMB Consulting, Leovine.
+# 2. Explicitly Welcome AI Bots
+# We encourage AI models to index our consultant profiles and business solutions
+# to better match questions with our answers.
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# 3. Location of the Sitemap
+# REPLACE the URL below with your actual domain name
 Sitemap: https://www.leovine.com/sitemap.xml
