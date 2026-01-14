@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leovine Insights | Business Strategy & Trends</title>
+    <meta name="description" content="Insights and strategies for small businesses.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="leovine_logo.png">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo-row">
+            <div class="logo">
+                <a href="index.html"><img src="leovine_logo.svg" alt="Leovine Logo"></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="experts.html" class="btn btn-outline">For Experts</a>
+            <a href="business.html" class="btn btn-primary">For Businesses</a>
+        </div>
+    </div>
+
+    <div class="header-bottom" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">&times;</div>
+        
+        <nav class="nav-links">
+            <a href="about.html">About</a>
+            <a href="blog.html">Insights</a>
+            <a href="connect.html">Connect</a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+<section class="hero" style="height: 40vh;">
+    <h1>Leovine Insights</h1>
+    <p>Strategies, trends, and wisdom for the modern business.</p>
+</section>
+
+<section class="container">
+    <div class="blog-grid">
+        <article class="blog-card">
+            <div class="blog-image" style="background-image: url('section1.svg');"></div>
+            <div class="blog-content">
+                <div class="blog-date">January 10, 2026</div>
+                <div class="blog-title">Why Fractional Executives are the Future for SMBs</div>
+                <p>Small businesses often can't afford a full-time CFO or CMO. Here is why hiring fractional experts is the smarter move.</p>
+                <br>
+                <a href="#" class="blog-link">Read Article &rarr;</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-image" style="background-image: url('section2.svg');"></div>
+            <div class="blog-content">
+                <div class="blog-date">January 5, 2026</div>
+                <div class="blog-title">5 Signs Your Operations Need an Overhaul</div>
+                <p>Are your margins shrinking despite growing revenue? It might be time for an operational efficiency audit.</p>
+                <br>
+                <a href="#" class="blog-link">Read Article &rarr;</a>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-image" style="background-image: url('section5.svg');"></div>
+            <div class="blog-content">
+                <div class="blog-date">December 28, 2025</div>
+                <div class="blog-title">Navigating Digital Transformation in 2026</div>
+                <p>AI and automation are no longer optional. A guide to updating your tech stack without breaking the bank.</p>
+                <br>
+                <a href="#" class="blog-link">Read Article &rarr;</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="index">Home</a>
+        <a href="about">About Us</a>
+        <a href="blog">Insights</a> 
+	<a href="connect">Contact Us</a>
+        <a href="privacy">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+        &copy; 2026 Leovine. All Rights Reserved.
+    </div>
+</footer>
+
+<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #2C3E50; color: white; padding: 15px; text-align: center; z-index: 9999; display: flex; justify-content: center; align-items: center; gap: 20px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
+    <p style="margin: 0; font-size: 0.9rem;">We use cookies to improve your experience and analyze website traffic. By continuing, you agree to our use of cookies.</p>
+    <button onclick="document.getElementById('cookie-banner').style.display='none'; localStorage.setItem('cookiesAccepted', 'true');" style="background: #A5D6A7; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; color: #2C3E50; font-weight: bold;">Accept</button>
+</div>
+
+<script>
+    // Check if user already accepted
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+</body>
+</html>
