@@ -256,25 +256,128 @@ iframe {
     margin: 0 auto;
 }
 
-/* Footer */
-footer {
-    background-color: var(--dark-text);
+/* --- 3-COLUMN FOOTER STYLES --- */
+.main-footer {
+    background-color: var(--dark-text); /* #2C3E50 */
     color: var(--off-white);
-    padding: 3rem 5%;
-    text-align: center;
+    padding: 4rem 5%;
+    margin-top: auto;
 }
 
-footer a {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Layout: 3 Columns for Laptop */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; /* Brand gets slightly more space */
+    gap: 3rem;
+}
+
+/* Typography */
+.footer-brand {
+    font-size: 2rem;
+    color: var(--primary-green); /* #A5D6A7 */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.footer-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 300px; /* Limits width for readability */
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Links List */
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links-list a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links-list a:hover {
     color: var(--primary-green);
-    margin: 0 10px;
+    padding-left: 5px;
 }
 
-footer .copyright {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    opacity: 0.7;
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-green);
+    color: var(--dark-text);
+}
+
+/* Copyright Section (in right column) */
+.copyright-text p {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive: Stack on Mobile */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* Single column */
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .footer-desc, .social-icons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
 
 /* Blog Card Styles */
 .blog-grid {
