@@ -11,55 +11,141 @@
 
   gtag('config', 'G-PL8CKSVKL8');
 </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leovine | Privacy Policy</title>
+    <meta name="description" content="Leovine connects small and medium businesses with world-class independent consultants. Get world-class expertise without the overhead.">
+    <link rel="icon" type="image/x-icon" href="leovine_fav.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 
 <header>
-    <div class="logo">
-        <a href="/"><img src="leovine_logo.svg" alt="Leovine Logo"></a>
+    <div class="header-top">
+        <div class="logo-row">
+            <div class="logo">
+                <a href="/"><img src="leovine_logo.svg" alt="Leovine Logo"></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="experts" class="btn btn-outline">For Experts</a>
+            <a href="business" class="btn btn-primary">For Businesses</a>
+        </div>
     </div>
 
-    <div class="nav-buttons">
-        <a href="business" class="btn btn-primary">For Businesses</a>
-        <a href="experts" class="btn btn-outline">For Experts</a>
+    <div class="header-bottom" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">&times;</div>
+        
+        <nav class="nav-links">
+            <a href="about">About</a>
+            <a href="blog">Insights</a>
+            <a href="connect">Connect</a>
+        </nav>
     </div>
 </header>
 
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+</script>
 
-<section class="container" style="padding-top: 150px;">
+
+<section class="container" style="padding-top: 150px; max-width: 800px; margin-bottom: 100px;">
     <h1>Privacy Policy</h1>
-    <p><em>Last Updated: 2026</em></p>
+    <p><em>Last Updated: January 14, 2026</em></p>
     
-    <div style="margin-top: 40px; max-width: 800px;">
+    <div style="margin-top: 40px; line-height: 1.8;">
         <h3>1. Introduction</h3>
-        <p>Welcome to Leovine. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.</p>
-        <br>
-        <h3>2. Data We Collect</h3>
-        <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows: Identity Data, Contact Data, and Technical Data (including Google Analytics data).</p>
-        <br>
-        <h3>3. How We Use Your Data</h3>
-        <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances: To register you as a new expert or client; to manage our relationship with you; to improve our website.</p>
-        <br>
-        <h3>4. Contact Details</h3>
-        <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:connect@leovine.com">connect@leovine.com</a>.</p>
+        <p>Leovine ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and share information about you when you use our website and services to connect with consultants or businesses.</p>
+
+        <h3>2. Information We Collect</h3>
+        <p>We collect information you provide directly to us, such as when you fill out a form to hire an expert or join our network. This includes:</p>
+        <ul>
+            <li><strong>Identity Data:</strong> Name, job title, and company name.</li>
+            <li><strong>Contact Data:</strong> Email address and phone number.</li>
+            <li><strong>Project Data:</strong> Details about your business challenges, project scope, and budget.</li>
+            <li><strong>Technical Data:</strong> Internet Protocol (IP) address, browser type and version, time zone setting, operating system, and platform.</li>
+        </ul>
+
+        <h3>3. How We Use Your Information</h3>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Facilitate the matching process between businesses and consultants.</li>
+            <li>Communicate with you about your project or application.</li>
+            <li>Analyze website usage and improve our platform functionality using tools like Google Analytics.</li>
+            <li>Comply with legal obligations.</li>
+        </ul>
+        <p><strong>We do not sell your personal data to third parties.</strong> We only share data with prospective consultants or clients with your explicit consent for the purpose of a project engagement.</p>
+
+        <h3>4. Google Analytics & Cookies</h3>
+        <p>We use Google Analytics to help us understand how our website is used. Google Analytics uses "cookies," which are text files placed on your computer, to collect standard internet log information and visitor behavior information in an anonymous form.</p>
+        <p>The information generated by the cookie about your use of the website (including your IP address) is transmitted to Google. This information is then used to evaluate visitors' use of the website and to compile statistical reports on website activity for Leovine.</p>
+
+        <h3>5. Data Security</h3>
+        <p>We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way. Access to your personal data is limited to those employees, agents, and partners who have a business need to know.</p>
+
+        <h3>6. Your Rights</h3>
+        <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete the data we hold about you. To exercise these rights, please contact us.</p>
+
+        <h3>7. Contact Us</h3>
+        <p>If you have any questions about this privacy policy or our privacy practices, please contact us at: <strong>houseofleovine@gmail.com</strong>.</p>
     </div>
 </section>
 
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <h3 class="footer-brand">Leovine</h3>
+                <p class="footer-tagline">Expertise. Delivered.</p>
+                <p class="footer-desc">Bridging the gap between ambitious businesses and world-class independent consultants.</p>
+            </div>
 
-<footer>
-    <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="about">About Us</a>
-        <a href="connect">Contact</a>
-        <a href="privacy">Privacy Policy</a>
-    </div>
-    <div class="copyright">
-        &copy; 2026 Leovine. All Rights Reserved.
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/experts">For Experts</a></li>
+                    <li><a href="/business">For Businesses</a></li>
+                    <li><a href="/blog">Insights</a></li>
+                    <li><a href="/connect">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col social-col">
+                <h4 class="footer-heading">Follow Us</h4>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/leovine/" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://www.instagram.com/houseofleovine" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                    </a>
+                    <a href="mailto:connect@leovine.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+
+                <div class="copyright-text">
+                    <p>&copy; 2026 Leovine.</p>
+                    <p>All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </footer>
 
